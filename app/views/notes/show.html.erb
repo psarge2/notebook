@@ -1,6 +1,6 @@
 <h1> Notes </h1>
 
-  <p><%= @note.title %></p>
-  <p><%= @note.content %></p>
+  <p><%= render @note%></p>
   <p><%= button_to "Delete note", note_path(@note), method: :delete %></p>
-
+  <p><%= link_to "New Note", new_note_path %></p>
+  <p><%= link_to "Show All Notes", notes_path %></p>
